@@ -398,6 +398,12 @@ html{
     padding-bottom: var(--section-padding);
 }
 
+@media (max-width:767px){
+    .services .offers .offers-section{
+        margin-top:40px;
+    }
+}
+
 @media (min-width:768px){
 
     .services .offers{
@@ -409,6 +415,7 @@ html{
     .services .offers .offers-section{
         display: flex;
     }
+
     .services .offers .offers-section i{
         margin-right:50px;
     }
