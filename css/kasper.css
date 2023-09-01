@@ -146,6 +146,15 @@ html{
     font-size:16px;
     line-height:2;
 }
+
+.overlay{
+    position:absolute;
+    top:0;
+    z-index:0;
+    min-height:100%;
+    width:100%;
+    background-color:rgba(0 , 0 , 0 , 0.6);
+}
 /*end main components*/
 
 
@@ -277,14 +286,6 @@ html{
     background-color:#1f2021;
     background-image:url("../Images/landing.jpg");
     background-size:cover;
-}
-
-.landing .overlay{
-    position:absolute;
-    z-index:2;
-    min-height:100%;
-    width:100%;
-    background-color:rgba(0 , 0 , 0 , 0.6);
 }
 
 .landing .description{
@@ -432,3 +433,71 @@ html{
     }
 }
 /*end services*/
+
+/*start features*/
+.features{
+    padding:var(--section-padding) 0;
+    position:relative;
+    height:600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#1f2021;
+    background-image: url(../Images/design-features.jpg);
+    background-size:cover;
+    overflow: hidden;
+}
+
+.features .img{
+    margin:auto;
+    text-align:center;
+    position: relative;
+    left:0%;
+    bottom:-90px;
+}
+
+.features .features-box{
+    padding:50px;
+    height:calc(100% - 50px);
+    background-color:var(--transparent-color);
+    z-index:1;
+    width:50%;
+    color:white;
+}
+
+.features .features-box h2{
+    text-transform: uppercase;
+    font-weight:normal;
+    margin-bottom:40px;
+}
+
+.features .features-box ul{
+    list-style: none;
+}
+
+
+.features .features-box ul li{
+    margin-bottom:20px;
+}
+
+.features .features-box ul li::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 600;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+
+ @media (max-width:767px){
+    .features .features-box{
+        width:100%;
+    }
+
+    .features .img{
+        display: none;
+    }
+ }
+
+
+/*end features*/
