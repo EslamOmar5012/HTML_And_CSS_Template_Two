@@ -398,12 +398,6 @@ html{
     padding-bottom: var(--section-padding);
 }
 
-@media (max-width:767px){
-    .services .offers .offers-section{
-        margin-top:40px;
-    }
-}
-
 @media (min-width:768px){
 
     .services .offers{
@@ -433,7 +427,13 @@ html{
 
 @media (max-width:767px){
     .services .offers .offers-section{
+        margin-top:50px;
         text-align:center;
+    }
+
+    .services .offers .offers-section:not(:last-child){
+        padding-bottom:20px;
+        border-bottom:1px solid black;
     }
 
     .services .offers .offers-section i{
