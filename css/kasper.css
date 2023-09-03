@@ -460,6 +460,7 @@ html{
     margin:auto;
     text-align:center;
     position: relative;
+    z-index:3;
     left:0%;
     bottom:-90px;
 }
@@ -468,7 +469,7 @@ html{
     padding:50px;
     height:calc(100% - 50px);
     background-color:var(--transparent-color);
-    z-index:1;
+    z-index:3;
     width:50%;
     color:white;
 }
